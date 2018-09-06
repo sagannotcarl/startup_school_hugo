@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>{{ .Params.title }}</title>
 </head>
 <body>
-  single
+  {{ partial "nav" . }}
+  {{ partial "header" . }}
+  {{ .Content }}
 </body>
 </html>

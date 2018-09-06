@@ -13,7 +13,7 @@ services:
       - "1314:1313"
     volumes:
       - .:/opt:rw
-    command: hugo server -s /opt/site --config /opt/site/config.yml --baseURL http://mattfinucane.local/ --bind "0.0.0.0" --appendPort=false --verbose
+    command: hugo server -s /opt/site --config /opt/site/config.yml --baseURL http://negonego.local:84/ --bind "0.0.0.0" --appendPort=false --verbose
 
   nginx-dev:
     container_name: hugo_nginx_dev
