@@ -1,25 +1,19 @@
----
-title: 			"Full-stack software engineer"
-description: 	"I am a full-stack software engineer based in Berlin. This is my portfolio and blog which details my skills and experience."
-identifier:		"home"
----
+## Product One
 
-## Skills
-- Development of mobile applications, both cross platform and native.
-- Effective communication skills; training, presentations, documentation and delegation.
-- Practice and advocate the highest development standards.
-- In–depth understanding of technologies across multiple domains.
-- Strong analytical thinking and problem solving skills.
-- Life–long learner with strong interest in continuous professional development.
+- You can buy things
+- It's going to be fun
 
-## Languages
-{{< taxonomies items="languages" >}}
+[Sign up](/signup "product one")
 
-## Frameworks
-{{< taxonomies items="frameworks" >}}
+## Product Two
 
-## Infrastructure
-{{< taxonomies items="infrastructure" >}}
+- I'm pretty sure you'll like it
+- Way better than product one
 
-## Tools
-{{< taxonomies items="tools" >}}
+[Sign up](/signup "product two")
+
+## Product Three
+
+- Super duper
+
+[Sign up](/signup "prduct three")
