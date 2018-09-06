@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  site:
+    container_name: site
+    restart: on-failure
+    build:
+      context: .docker/site
+      dockerfile: Dockerfile
+      args:
+        hugo_version: "0.48"
+    volumes:
+      - ./:/opt:rw
+    command: hugo -s /opt/site -b http://negonego.build --config=./site/build.yml -d ../public
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .docker/nginx
+      dockerfile: Dockerfile
+      args:
+        nginx_conf: nginx.build.conf
+    volumes:
+      - ./media:/opt/media:ro
+      - ./public:/opt/public:ro
+    links:
+      - site
+    ports:
+      - "85:80"
+    command: nginx -g "daemon off;"
+
+  # webpack:
+  #   container_name: webpack
+  #   build:
+  #     context: .
+  #     dockerfile: ./.docker/node/Dockerfile.build
+  #   volumes:
+  #     - .:/opt:rw
+  #     - /opt/node_modules
+  #   command: ["npm", "run", "build"]

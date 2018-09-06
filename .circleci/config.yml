@@ -3,12 +3,12 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.28
-    working_directory: ~/project
+    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -s src/
       - run:
-          name: "Test Website"
+          name: "Startup school marketing site"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external

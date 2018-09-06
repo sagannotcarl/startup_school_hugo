@@ -1,0 +1,6 @@
+---
+baseURL:                "http://negonego.build"
+
+params:
+  title: "Our startup school marketing site"
+...
