@@ -30,14 +30,14 @@ services:
       - "84:80"
     command: nginx -g "daemon off;"
 
-  webpack-dev:
-    container_name: hugo_webpack_dev
-    restart: on-failure
-    build:
-      context: .
-      dockerfile: ./.docker/node/Dockerfile.development
-    volumes:
-      - .:/opt:rw
-      - /opt/node_modules
-    command: ["npm", "run", "start:dev"]
+  # webpack-dev:
+  #   container_name: hugo_webpack_dev
+  #   restart: on-failure
+  #   build:
+  #     context: .
+  #     dockerfile: ./.docker/node/Dockerfile.development
+  #   volumes:
+  #     - .:/opt:rw
+  #     - /opt/node_modules
+  #   command: ["npm", "run", "start:dev"]
 

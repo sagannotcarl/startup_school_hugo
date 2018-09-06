@@ -1,4 +1,6 @@
 ---
+baseUrl: http://negonego.local:84
+
 params:
-  title: Our startup school marketing sit
-  baseUrl: http://negonego.local:84
+  title: Our startup school marketing site
+...
