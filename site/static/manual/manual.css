@@ -1,0 +1,112 @@
+h1 {
+  color: #E64D68;
+}
+
+h2 {
+  color: #E64D68;
+  border-bottom: 3px solid #F0D84D;
+}
+
+body {
+  font-family: "Untitled Serif Regular";
+  margin: 0;
+  background-color: #f6f9fc;
+}
+
+a {
+  text-decoration: none;
+  color: #008847;
+}
+
+a:hover {
+  color: #85B800;
+}
+
+nav {
+  background-color: #E64D68;
+  font-size: 3em;
+  padding: 10px;
+}
+
+nav a {
+  color: #f6f9fc;
+  padding: none;
+  background-color: inherit;
+  padding: 0 30px 30px 30px;
+  display: inline;
+  border-radius: 30px;
+}
+
+nav a:hover {
+  color: #f6f9fc;
+  padding: none;
+  background-color: inherit;
+}
+
+.content {
+  margin: 0 30px;
+
+}
+
+/* Limit to home page */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  padding-top: 30px;
+}
+
+h2 {
+  grid-row: 1;
+}
+
+ul {
+  grid-row: 2;
+}
+
+p {
+  text-align: center;
+  grid-row: 3;
+}
+
+a {
+  color: #f6f9fc;
+  background-color: #85B800;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 4px 18px;
+  border-bottom: 2px solid #F0D84D;
+}
+
+a:hover {
+  color: #f6f9fc;
+  background-color: #008847;
+}
+
+@font-face {
+  font-family: 'Untitled Serif Regular';
+  src: url("./fonts/UntitledSerifTest-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Untitled Serif Italic';
+  src: url("./fonts/UntitledSerifTest-RegularItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Untitled Serif Bold';
+  src: url("./fonts/UntitledSerifTest-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Untitled Serif Bold Italic';
+  src: url("./fonts/UntitledSerifTest-BoldItalic.woff") format("woff"); }
+
+/*
+background: #f6f9fc;
+
+red: #E64D68;
+yellow: #F0D84D;
+blue: #C1D8E8;
+
+green: #008847;
+light green: #85B800;
+*/

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ .Params.title }}</title>
+  {{ partial "head" . }}
 </head>
 <body>
   {{ partial "nav" . }}
-  {{ partial "header" . }}
-  {{ .Content }}
+  <div class="content">
+    {{ partial "header" . }}
+    {{ .Content }}
+  </div>
 </body>
 </html>
