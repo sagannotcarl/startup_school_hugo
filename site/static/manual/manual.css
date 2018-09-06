@@ -13,6 +13,14 @@ body {
   background-color: #f6f9fc;
 }
 
+body em {
+  font-family: "Untitled Serif Italic";
+}
+
+body strong {
+  font-family: "Untitled Serif Bold";
+}
+
 a {
   text-decoration: none;
   color: #008847;
@@ -28,58 +36,58 @@ nav {
   padding: 10px;
 }
 
-nav a {
+nav a.site-name {
   color: #f6f9fc;
-  padding: none;
   background-color: inherit;
-  padding: 0 30px 30px 30px;
+  padding: 30px;
   display: inline;
+  border-bottom: 2px solid #F0D84D;
   border-radius: 30px;
 }
 
-nav a:hover {
+nav a.site-name:hover {
   color: #f6f9fc;
   padding: none;
   background-color: inherit;
 }
 
 .content {
-  margin: 0 30px;
-
+  margin: 45px 30px;
 }
 
 /* Limit to home page */
-.content {
+.home .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 50px;
   padding-top: 30px;
 }
 
-h2 {
+.home h2 {
   grid-row: 1;
 }
 
-ul {
+.home ul {
   grid-row: 2;
 }
 
-p {
+.home p {
   text-align: center;
   grid-row: 3;
 }
 
-a {
+.home .content a {
+  font-family: "Untitled Sans Medium";
   color: #f6f9fc;
   background-color: #85B800;
   padding: 10px;
   width: 100%;
   display: block;
-  border-radius: 4px 18px;
+  border-radius: 46px 18px;
   border-bottom: 2px solid #F0D84D;
 }
 
-a:hover {
+.home .content a:hover {
   color: #f6f9fc;
   background-color: #008847;
 }
@@ -96,11 +104,28 @@ a:hover {
   font-family: 'Untitled Serif Bold';
   src: url("./fonts/UntitledSerifTest-Bold.woff") format("woff"); }
 
-@font-face {
+/*@font-face {
   font-family: 'Untitled Serif Bold Italic';
   src: url("./fonts/UntitledSerifTest-BoldItalic.woff") format("woff"); }
+*/
+@font-face {
+  font-family: 'Untitled Sans Medium';
+  src: url("./fonts/UntitledSansTest-Medium.woff") format("woff"); }
 
+/*@font-face {
+  font-family: 'Untitled Sans Italic';
+  src: url("./fonts/UntitledSansTest-MediumItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Untitled Sans Bold';
+  src: url("./fonts/UntitledSansTest-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Untitled Sans Bold Italic';
+  src: url("./fonts/UntitledSansTest-BoldItalic.woff") format("woff"); }
+*/
 /*
+http://paletton.com/palette.php?uid=33w0O0klLu595Yzi%2BDyp6oyqye-
 background: #f6f9fc;
 
 red: #E64D68;
