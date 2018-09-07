@@ -8,10 +8,10 @@ jobs:
       - checkout
       - run:
           name: "Debugging"
-          command: pwd && ls -al ~/project && ls -al ~/project
+          command: pwd && ls -al ~/project && ls -al ~/project/site
       - run:
           name: "Run Hugo"
-          command: HUGO_ENV=production hugo -v -s ~/project/ --config=./site/build.yml -d ../public
+          command: HUGO_ENV=production hugo -v -s ~/project/site --config= ~/project/site/build.yml -d ~/project/public
       - run:
           name: "Test site"
           command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
