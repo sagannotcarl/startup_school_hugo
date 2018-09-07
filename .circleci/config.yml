@@ -7,8 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Run Hugo"
-          command: HUGO_ENV=production hugo -v -s ~/project/src/ --config=./site/build.yml -d ../public
+        name: "Debugging"
+        command: pwd; ls -al ~; ls -al ~/project;
       - run:
-          name: "Startup school marketing site"
-          command: htmlproofer ~/project/src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          name: "Run Hugo"
+          command: HUGO_ENV=production hugo -v -s ~/project/ --config=./site/build.yml -d ../public
+      - run:
+          name: "Test site"
+          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
