@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: "Debugging"
-        command: pwd; ls -al ~; ls -al ~/project;
+          name: "Debugging"
+          command: pwd && ls -al ~/project && ls -al ~/project
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -s ~/project/ --config=./site/build.yml -d ../public
