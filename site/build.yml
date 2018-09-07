@@ -1,5 +1,5 @@
 ---
-baseURL:                "http://negonego.build"
+baseURL: "http://negonego.build"
 
 params:
   title: "Our startup school marketing site"
