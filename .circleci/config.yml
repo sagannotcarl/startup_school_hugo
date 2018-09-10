@@ -27,3 +27,9 @@ jobs:
           sudo gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
           sudo gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
           gsutil rsync -R ~/project/public/ gs://www.workablenetwork.com
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+    - deploy
