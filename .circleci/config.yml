@@ -15,10 +15,17 @@ jobs:
       - run:
           name: "Test site"
           command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - persist_to_workspace:
+          root: /root/project
+          paths:
+            - public
   deploy:
     docker:
       - image: google/cloud-sdk
+    working_directory: ~/project
     steps:
+      - attach_workspace:
+          at: /root/project
       - run:
           name: Store Service Account
           command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
