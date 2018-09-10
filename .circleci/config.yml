@@ -27,9 +27,6 @@ jobs:
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
           gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
       - run: |
-          pwd
-          ls -al
-          ls ~/
           ls ~/project
           ls ~/project/public
       - run:
@@ -40,4 +37,6 @@ workflows:
   workflow:
     jobs:
     - build
-    - deploy
+    - deploy:
+      requires:
+        - build
