@@ -1,5 +1,5 @@
 ---
-title: "Prodcut B"
+title: "Product B"
 ---
 
 - About product B
