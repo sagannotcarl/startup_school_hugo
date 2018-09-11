@@ -32,17 +32,17 @@ a:hover {
 
 nav {
   background-color: #E64D68;
-  font-size: 3em;
+  font-size: 2em;
   padding: 10px;
 }
 
 nav a.site-name {
   color: #f6f9fc;
   background-color: inherit;
-  padding: 30px;
+  padding: 0px;
   display: inline;
-  border-bottom: 2px solid #F0D84D;
-  border-radius: 30px;
+  border-bottom: 0px;
+  border-radius: 0px;
 }
 
 nav a.site-name:hover {
@@ -79,11 +79,10 @@ nav a.site-name:hover {
 .home .content a {
   font-family: "Untitled Sans Medium";
   color: #f6f9fc;
-  background-color: #85B800;
+  background-color: #f6f9fc;
   padding: 10px;
   width: 100%;
   display: block;
-  border-radius: 46px 18px;
   border-bottom: 2px solid #F0D84D;
 }
 
