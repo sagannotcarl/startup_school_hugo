@@ -32,14 +32,15 @@ a:hover {
 
 nav {
   background-color: #E64D68;
-  font-size: 2em;
   padding: 10px;
+  text-align: center;
 }
 
 nav a.site-name {
   color: #f6f9fc;
   background-color: inherit;
   padding: 0px;
+  font-size: 1.2em;
   display: inline;
   border-bottom: 0px;
   border-radius: 0px;
@@ -51,16 +52,33 @@ nav a.site-name:hover {
   background-color: inherit;
 }
 
+
+@media (min-width: 740px) {
+  nav {
+    text-align: inherit;
+  }
+
+  nav a.site-name {
+    font-size: 2em;
+  }
+}
+
 .content {
   margin: 45px 30px;
 }
 
 /* Limit to home page */
-.home .content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 50px;
-  padding-top: 30px;
+.home h2 {
+  grid-row: 1;
+  margin-top: 50px;
+}
+
+@media (min-width: 740px) {
+  .home .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+  }
 }
 
 .home h2 {
@@ -69,6 +87,7 @@ nav a.site-name:hover {
 
 .home ul {
   grid-row: 2;
+  padding-left: 15px;
 }
 
 .home p {
@@ -81,7 +100,6 @@ nav a.site-name:hover {
   color: #f6f9fc;
   background-color: #E64D68;
   padding: 10px;
-  width: 100%;
   display: block;
 }
 
