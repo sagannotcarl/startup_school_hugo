@@ -1,21 +1,23 @@
-## Journey
+## Advice
 
-- Step by Step guide to starting your business from ideation to launch
-- Outsource all the dirty work: accounting, taxes, registration, etc.
-- We'll keep you focused on the things that matter: your business and your customers!
+- I'll clean up your messy accounting data and build your business profile
+- I use machine learning to understand your business and help you position your business to sell more.
+- I'll keep you up to date on your metrics and keep you on track to reach your goals
 
-[Sign up](/a "product one")
+[Learn more about Advice](/a "product one")
 
-## Advisory
+## Suppliers
 
-- We empower entrepreneurs by building machine learning software that understand your financials and give you the advice you need for the stage of business you are in.
-- Connect your Xero or Quickbooks Online account and we'll take care of the rest
+- Need anything done? Need to buy something? I'll connect you to the best suppliers.
+- Can't manage all your purchases? I'll keep you on track with your cash.
 
-[Sign up](/b "product two")
+[Learn more about Suppliers](/b "product two")
 
 ## Operations
 
-- Access operations tools specific to your business: shift scheduler, inventory, purchasing, etc.
+- I'll help you run your operations smoothly.
+- I'll make sure you're focused on just the issues that matter
+- Payroll, scheduling, inventory, you name it!
 
 
-[Sign up](/c "product three")
+[Learn more about Operations](/c "product three")

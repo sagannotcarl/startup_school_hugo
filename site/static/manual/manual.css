@@ -4,7 +4,7 @@ h1 {
 
 h2 {
   color: #E64D68;
-  border-bottom: 3px solid #F0D84D;
+  border-bottom: 3px solid #4abdac;
 }
 
 body {
@@ -31,7 +31,7 @@ a:hover {
 }
 
 nav {
-  background-color: #E64D68;
+  background-color: #4abdac;
   padding: 10px;
   text-align: center;
 }
@@ -98,14 +98,14 @@ nav a.site-name:hover {
 .home .content a {
   font-family: "Untitled Sans Medium";
   color: #f6f9fc;
-  background-color: #E64D68;
+  background-color: #4abdac;
   padding: 10px;
   display: block;
 }
 
 .home .content a:hover {
   color: #f6f9fc;
-  background-color: #008847;
+  background-color: #fc4a1a;
 }
 
 @font-face {
